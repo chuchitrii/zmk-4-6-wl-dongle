@@ -8,6 +8,23 @@
 / {
     combos {
         compatible = "zmk,combos";
+        
+        bootloaderLeft {
+            bindings = <&bootloader>;
+            key-positions = <0 13>;
+        };
+        bootloaderRight {
+            bindings = <&bootloader>;
+            key-positions = <11 22>;
+        };
+        resetLeft {
+            bindings = <&sys_reset>;
+            key-positions = <0 12>;
+        };
+        resetRight {
+            bindings = <&sys_reset>;
+            key-positions = <11 23>;
+        };
     };
 
     trackball_listener {
